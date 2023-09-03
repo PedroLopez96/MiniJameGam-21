@@ -6,12 +6,14 @@ TagManager:
   tags:
   - Enemy
   - Bullet
-  - Scenario
+  - Interactable
+  - Weapon
+  - LoopDevice
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interactable
   - Water
   - UI
   - 

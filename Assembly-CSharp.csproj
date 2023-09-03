@@ -59,18 +59,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\Player\New Game\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\MeshGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\MapDisplay.cs" />
+    <Compile Include="Assets\Scripts\InteractableScript.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemySpawn.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\TextureGenerator.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\MapGeneratorEditor.cs" />
-    <Compile Include="Assets\Scripts\EnemyScript.cs" />
+    <Compile Include="Assets\Scripts\HUDScript.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\Menu\PanelSwitch.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\PlayerInteract.cs" />
+    <Compile Include="Assets\Scripts\LoopScript.cs" />
+    <Compile Include="Assets\Scripts\Player\HitBoxMeleeScript.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\MapGenerator.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\EnemyFollow.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\TerrainGenerator\Noise.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

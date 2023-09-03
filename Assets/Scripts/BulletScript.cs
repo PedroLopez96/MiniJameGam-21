@@ -21,7 +21,7 @@ public class BulletScript : MonoBehaviour
         {
             Debug.Log("Hit enemy!");
             Destroy(transform.gameObject);
-            collision.transform.GetComponent<EnemyScript>().takeDamage(bulletDamage);
+            
         }
 
         StartCoroutine(Destroy());
