@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     public Animator animator;
-
+    public AudioClip hit;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -19,18 +19,22 @@ public class EnemyScript : MonoBehaviour
 
     public IEnumerator destroyMe()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Colidiu");
         if (other.transform.tag == "Weapon")
         {
-            Destroy(gameObject);
+            AudioScript.play(hit);
+            animator.SetBool("isDead", true);
+            Destroy(gameObject, 0.4f);
             Debug.Log("colidiu inimigo");
+            GetComponent<EnemyScript>().enabled = false;
         }
             
     }
+    
 }

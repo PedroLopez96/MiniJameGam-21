@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
         if(move == Vector2.zero)
         {
             isWalking = false;
-        }
+            GetComponent<PlayerAnimations>().resetWalking();
+        } 
     }
 
     public void movePlayer()
@@ -38,6 +39,9 @@ public class PlayerController : MonoBehaviour
 
         if (movement != Vector3.zero)
         {
+            // ANIMATE WALKING
+            GetComponent<PlayerAnimations>().animWalking();
+
             // Only rotate when there is movement
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
             

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
+
+    public float minX, maxX;
+    public float minZ, maxZ;
     public float spawnInterval;
     public int totalEnemiesToSpawn;
     public int spawnedEnemies;
@@ -19,9 +22,14 @@ public class EnemySpawn : MonoBehaviour
         {
             
             yield return new WaitForSeconds(spawnInterval);
-            Instantiate(enemyPrefab, new Vector3(Random.Range(-25, 25), 1, Random.Range(-25, 25)), Quaternion.identity);
+            Instantiate(enemyPrefab, new Vector3(Random.Range(minX, maxX), 1, Random.Range(minZ,maxZ)), Quaternion.identity);
             spawnedEnemies++;
             
         }
+    }
+
+    public void resetSpawn()
+    {
+        spawnedEnemies = 0;
     }
 }

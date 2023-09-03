@@ -12,7 +12,12 @@ public class PlayerAnimations : MonoBehaviour
     }
     public void animWalking()
     {
-        animator.SetTrigger("Walk");
+        animator.SetBool("Walk", true);
+    }
+
+    public void resetWalking()
+    {
+        animator.SetBool("Walk", false);
     }
 
     public void animAttackingStay()

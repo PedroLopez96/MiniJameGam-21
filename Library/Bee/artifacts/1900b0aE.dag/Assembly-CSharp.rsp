@@ -369,6 +369,7 @@
 "Assets/Scripts/LoopScript.cs"
 "Assets/Scripts/Menu/PanelSwitch.cs"
 "Assets/Scripts/Player/HitBoxMeleeScript.cs"
+"Assets/Scripts/Player/New Game/NewLoopScript.cs"
 "Assets/Scripts/Player/New Game/PlayerScript.cs"
 "Assets/Scripts/Player/PlayerAnimations.cs"
 "Assets/Scripts/Player/PlayerAttack.cs"
